@@ -2,21 +2,22 @@
 :root {
   /* used for text */
   --clr-primary-light: #FFF;
-  --clr-primary-medium: #e87130;
-  --clr-primary-dark: #d5662b;
+  --clr-primary-medium: #FDF0D5;
+  --clr-primary-dark: #780000;
   --clr-primary-black: #000;
 
   /* background colors*/
   --clr-background-buttons-light: #FFF;
-  --clr-background-buttons-dark: #e87130;
+  --clr-background-buttons-medium: #FDF0D5;
+  --clr-background-buttons-dark: #780000;
   
-  --clr-background-light: #fff;
-  --clr-background-medium: #e87130;
-  --clr-background-dark: #36363f;
+  --clr-background-light: #FDF0D5;
+  --clr-background-medium: #669BBC;
+  --clr-background-dark: #780000;
   --clr-background-black: #000;
   
   /* fonts */
-  --ff-primary: "Open Sans", sans-serif;
+  --ff-primary: 'Montserrat Alternates', sans-serif;
   --ff-secondary: "Roboto", sans-serif;
   --ff-size-default: 1rem; /* default for all text */
   --ff-size-h-default: 1rem; /* default for all headers */
@@ -34,7 +35,7 @@
   --text-shadow-secondary: 2px 7px #e8713096;
 
   /* Radius */
-  --radius-btn: 10px;
+  --radius-btn: 50px;
   --radius-box: 20px;
   --radius-circle: 500px;
 
@@ -43,8 +44,8 @@
   --btn-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
 
   /* Borders */
-  --border-thin: 2px solid #8429E3;
-  --border-thick: 15px solid #8429E3;
+  --border-thin: 1px solid #780000;
+  --border-thick: 15px solid #780000;
 
   /* Outlines */
   --outline-thin: 2px solid rgba(132, 41, 227, 0.1);
@@ -105,7 +106,7 @@
 
 body {
   font-family: var(--ff-primary);
-  color: var(--clr-primary-dark);
+  color: var(--clr-primary-black);
   line-height: 1.5;
   font-size: var(--ff-size-default);
   font-weight: 400;
@@ -131,9 +132,9 @@ img {
 }
 
 h1, h2, h3, h4 {
-  color: var(--clr-primary-medium);
+  color: var(--clr-primary-black);
   line-height: 1.25;
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   text-align: center;
 }
 
@@ -247,12 +248,12 @@ input, textarea {
 .btn-dark {
   background: var(--clr-background-buttons-dark);
   color: var(--clr-primary-light);
-  border: 1px solid var(--clr-primary-light);
   box-shadow: var(--btn-shadow);
 }
 
 .btn-dark:hover {
   background: var(--clr-background-buttons-light);
+  border: var(--border-thin);
   color: var(--clr-primary-dark);
 }
 
@@ -328,6 +329,12 @@ input, textarea {
   height: var(--height-nav);
 }
 
+.top-nav .btn {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+
 .nav-logo {
   padding: 1rem;
 }
@@ -350,7 +357,7 @@ input, textarea {
 
 .top-nav ul a {
   text-transform: capitalize;
-  color: var(--clr-primary-dark);
+  color: var(--clr-primary-black);
 }
 
 /* show top nav for tablets and desktop */
@@ -361,14 +368,15 @@ input, textarea {
 
   .top-nav ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
     align-self: center;
-    -moz-column-gap: var(--grid-col-gap-normal);
-         column-gap: var(--grid-col-gap-normal);
+    align-items: center;
   }
 
   .top-nav ul a:hover {
-    color: var(--clr-primary-medium);
+    color: var(--clr-primary-dark);
     transition: var(--transition);
   }
 }
@@ -423,6 +431,77 @@ input, textarea {
        column-gap: var(--grid-col-gap-thin);
 }
 /******************************************/
+
+/* hero */
+.hero-section {
+  background-color: var(--clr-background-buttons-medium);
+}
+
+.hero {
+  display: grid;
+  row-gap: 2.2rem;
+  background-color: var(--clr-background-light);
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  align-items: center;
+}
+
+.hero .btn-dark {
+  display: block;
+  margin: 0 auto;
+  width: 10rem;
+  margin-top: 1.3rem;
+}
+
+.hero p {
+  margin-top: 1.3rem;
+  text-align: center;
+}
+
+/* wave  */
+
+.custom-shape-divider-bottom-1672184043 {
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672184043 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1672184043 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.wave {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
+  .hero h1, .hero p {
+    text-align: start;
+  }
+
+  .hero .btn {
+    margin: 1.5rem 0;
+    width: 11rem;
+  }
+}
 
 
 /*************** Footer *********************/
@@ -520,4 +599,3 @@ footer {
   }
 }
 /******************************************/
-}
