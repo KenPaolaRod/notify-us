@@ -8,18 +8,264 @@
   <link href="./fontawesome/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap" rel="stylesheet">  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
   <!-- NAVBAR -->
+  <nav id="top-nav" class="top-nav">
+    <div class="nav-logo">
+      <a href="/">
+        <img src="./images/logo.png">
+      </a>
+    </div>
+    <ul>
+      <li><a href="/">home</a></li>
+      <li><a href="getting-started.html">Getting started</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#" class="btn btn-dark">Add To Slack</a></li>
+    </ul>
+    <button id="open-sidenav-btn" class="icon-dark nav-action-btn" aria-label="Open Nav">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
   <!-- NAVBAR -->
 
   <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <button id="sidenav-close-btn" class="icon-light nav-action-btn" aria-label="Close Nav">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul class="sidebar-links">
+      <li><a href="/">home</a></li>
+      <li><a href="about-us.html">about us</a></li>
+      <li><a href="services.html">services</a></li>
+      <li><a href="contact-us.html">contact us</a></li>
+    </ul>
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.instagram.com/" class="social-icon" target="_blank" rel="noopener">
+          <i class="icon-dark fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/" class="social-icon" target="_blank" rel="noopener">
+          <i class="icon-dark fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://api.whatsapp.com/send?phone=+555555555&text=Hi, I would like to know more about your services" class="social-icon" target="_blank" rel="noopener">
+          <i class="icon-dark fab fa-whatsapp"></i>
+        </a>
+      </li>
+    </ul>
+  </aside>
   <!-- SIDEBAR -->
 
   <!-- MAIN -->
+  <section class="pricing-hero">
+    <article>
+      <h1>Pricing</h1>
+    </article>
+
+    <div class="wave">
+      <img src="images/wavesNegative.svg" alt="">
+    </div>
+  </section>
+
+  <section class="pricing-boxes section-center">
+
+    <div class="frequency-switch">
+      <span class="active">Annual</span>
+      <span>Monthly</span>
+    </div>
+
+
+    <article class="pricing-dark-box">
+
+      <div class="box-price">
+        <span class="big-number">49</span>
+        <span>USD</span>
+      </div>
+
+      <div class="box-content">
+
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Workspaces between 1 and 24 members</p>
+        </span>
+  
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited responses</p>
+        </span>
+        
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited polls</p>
+        </span>
+  
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited surveys</p>
+        </span>
+
+        <a href="" class="btn btn-dark">Upgrade</a>
+      </div>
+    </article>
+
+    <article class="pricing-dark-box">
+      <div class="most-popular-top-line">
+        <span>MOST POPULAR</span>
+      </div>
+
+      <div class="box-price">
+        <span class="big-number">49</span>
+        <span>USD</span>
+      </div>
+
+      <div class="box-content">
+
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Workspaces between 1 and 24 members</p>
+        </span>
+  
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited responses</p>
+        </span>
+        
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited polls</p>
+        </span>
+  
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited surveys</p>
+        </span>
+
+        <a href="" class="btn btn-dark">Upgrade</a>
+      </div>
+    </article>
+
+    <article class="pricing-dark-box">
+
+      <div class="box-price">
+        <span class="big-number">49</span>
+        <span>USD</span>
+      </div>
+
+      <div class="box-content">
+
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Workspaces between 1 and 24 members</p>
+        </span>
+  
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited responses</p>
+        </span>
+        
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited polls</p>
+        </span>
+  
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited surveys</p>
+        </span>
+
+        <a href="" class="btn btn-dark">Upgrade</a>
+      </div>
+    </article>
+
+    <article class="pricing-dark-box">
+
+      <div class="box-price">
+        <span class="big-number">49</span>
+        <span>USD</span>
+      </div>
+
+      <div class="box-content">
+
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Workspaces between 1 and 24 members</p>
+        </span>
+  
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited responses</p>
+        </span>
+        
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited polls</p>
+        </span>
+  
+        <span>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Unlimited surveys</p>
+        </span>
+
+        <a href="" class="btn btn-dark">Upgrade</a>
+      </div>
+    </article>
+
+  </section>
   <!-- MAIN -->
 
   <!-- FOOTER -->
+  <section class="footer-wave">
+    <img src="images/waves.svg" alt="">
+
+  </section>
+  <footer>
+    <div class="footer-logo">
+      <span>
+        <img src="images/logo.png" alt="Logo">
+      </span>
+
+      <span class="social-media">
+        <i class="fa-brands fa-facebook icon-dark"></i>
+        <i class="fa-brands fa-linkedin icon-dark"></i>
+      </span>
+    </div>
+
+    <div class="footer-links">
+      <ul>
+        <li><a href="/">Dashboard</a></li>
+        <li><a href="about-us.html">Getting Started</a></li>
+        <li><a href="services.html">Pricing</a></li>
+        <li><a href="contact-us.html">Blog</a></li>
+        <li><a href="contact-us.html">Support</a></li>
+        <li><a href="contact-us.html">Security</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="about-us.html">Privacy</a></li>
+        <li><a href="services.html">OAuth scopes </a></li>
+        <li><a href="contact-us.html">Policy GDPR </a></li>
+        <li><a href="contact-us.html">Terms of Service</a></li>
+        <li><a href="contact-us.html">Cookie</a></li>
+        <li><a href="contact-us.html">Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <a href="mailto:feedback@simplepoll.rocks">feedback@simplepoll.rocks</a>
+      <a href="mailto:feedback@simplepoll.rocks">feedback@simplepoll.rocks</a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy;<span id="date"></span> [***META-TITLE***], All Rights Reserved.</p>
+      <p class="author">Created by: </span><a href="https://kenyerlingweb.com" target="_blank" rel="noopener">kenyerlingweb.com</a></p>
+    </div>
+  </footer>
   <!-- FOOTER -->
 
   <script src="./js/app.js"></script>
