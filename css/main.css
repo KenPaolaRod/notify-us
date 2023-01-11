@@ -573,6 +573,24 @@ input, textarea {
 
 }
 
+.pricing-light-box {
+  background-color: var(--clr-background-dark);
+  margin: 4rem auto;
+}
+
+.pricing-light-box .box-price, .pricing-light-box .box-content .fa-circle-check, .pricing-light-box p, .pricing-light-box h3 {
+  color: var(--clr-primary-medium);
+}
+
+.pricing-light-box h3, .pricing-dark-box h3 {
+  text-align: start;
+}
+
+.pricing-light-box .box-content .btn {
+  background-color: var(--clr-background-buttons-medium);
+  color: var(--clr-primary-dark);
+}
+
 .pricing-dark-box {
   background-color: var(--clr-background-light);
   margin: 4rem auto;
@@ -600,6 +618,17 @@ input, textarea {
   font-size: 0.6rem;
 }
 
+ .box-plan-type {
+  font-family: var(--ff-secondary);
+  font-weight: bold;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.pricing-dark-box .box-plan-type {
+  color: var(--clr-background-buttons-dark);
+}
+
 .big-number {
   font-family: var(--ff-secondary);
   font-weight: bold;
@@ -608,11 +637,12 @@ input, textarea {
 
  .box-price {
   color: var(--clr-primary-dark);
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .box-content {
   padding: 1rem;
+  font-family: var(--ff-secondary);
 }
 
 .box-content .fa-circle-check {
@@ -630,6 +660,35 @@ input, textarea {
   margin: 0 auto;
   box-shadow: none;
 }
+
+/* compared-plans  */
+
+.plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--clr-background-dark);
+  padding-bottom: 1rem;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-top: 1rem;
+  font-family: var(--ff-secondary);
+}
+
+.plans-grid h3 {
+  font-family: var(--ff-secondary);
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.plans-grid .fa-circle-check {
+  color: var(--clr-background-medium);
+}
+
 
 
 
