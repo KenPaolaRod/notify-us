@@ -701,6 +701,62 @@ input, textarea {
 }
 
 
+.pricing-faq article {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--clr-background-light) ;
+  margin-bottom: 2rem;
+  width: 45rem;
+}
+
+.pricing-faq h2 {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-faq article h3 {
+  color: var(--clr-primary-dark);
+  text-align: start;
+  font-family: var(--ff-secondary);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.pricing-faq article.show-content p, .pricing-faq article.show-content .fa-minus {
+  display: block;
+}
+
+.pricing-faq article p {
+  padding-top: 1rem;
+  text-align: start;
+}
+
+.pricing-faq article p, .pricing-faq article.show-content .fa-plus {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-plus {
+  text-align: end;
+  color: var(--clr-primary-dark);
+}
+
+.fa-minus {
+  display: none;
+  text-align: center;
+  color: var(--clr-primary-dark);
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -802,6 +858,10 @@ input, textarea {
 
 .plans-grid-mobile {
   display: none;
+}
+
+.pricing-faq article {
+  width: 50rem;
 }
 }
 
