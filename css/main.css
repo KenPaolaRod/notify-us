@@ -542,7 +542,7 @@ input, textarea {
 }
 
 
-.pricing-hero article {
+.pricing-hero article, .getting-starteds-hero article {
   width: 80%;
   margin: 0 auto;
   padding: 4rem;
@@ -756,6 +756,57 @@ button {
   color: var(--clr-primary-dark);
 }
 
+/************************** GETTING STARTED **************************/
+
+.getting-starteds-hero {
+  background-color: var(--clr-background-light);
+}
+
+.getting-starteds-hero h1 {
+  /* font-family: var(--ff-primary) */
+  padding: 3rem;
+}
+
+.guides-nav {
+  display: grid;
+  padding: 1rem;
+  border: 1px solid var(--clr-primary-dark);
+  border-radius: var(--radius-box);
+  text-align: center;
+  align-items: center;
+}
+.guides-nav a {
+  color: var(--clr-primary-black);
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.guides-nav a:hover {
+  text-decoration: underline;
+}
+
+a.active-guide-nav  {
+  background-color: var(--clr-background-buttons-dark);
+  color: var(--clr-primary-light);
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.how-to-create-a-poll {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.how-to-create-a-poll p {
+  font-family: var(--ff-secondary);
+  font-size: 1.1rem;
+}
+
+.how-to-create-a-poll img {
+  width: 600px;
+  justify-self: center;
+}
+
 
 
 
@@ -863,6 +914,20 @@ button {
 .pricing-faq article {
   width: 50rem;
 }
+
+/************************** GETTING STARTED **************************/
+
+.getting-started-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.guides-nav {
+  height: 25rem;
+}
+
 }
 
 /*************** Footer *********************/
