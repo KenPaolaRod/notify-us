@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[***META-TITLE***] || Getting Started</title>
+  <title>[***META-TITLE***] || Thank You</title>
   <link href="./fontawesome/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap" rel="stylesheet">  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
   <!-- NAVBAR -->
@@ -66,35 +65,34 @@
   <!-- SIDEBAR -->
 
   <!-- MAIN -->
-  <section class="getting-starteds-hero">
-    <article>
-      <h1>Getting started with Notify Us</h1>
-    </article>
+  <section class="scope-page-section">
+    <h1>Permission scopes</h1>
+    <p>Permission (OAuth) scopes are the permissions that Simple Poll requires to function properly in Slack. Slack publishes guidance about understanding these permissions scopes in their help center, which you may find helpful to review: https://slack.com/intl/en-de/help/articles/115003461503-Understand-app-permissions</p>
 
-    <div class="wave">
-      <img src="images/wavesNegative.svg" alt="">
-    </div>
-  </section>
+    <h2>commands</h2>
+    <p>Add the /poll and /decision commands to your workspace as well as app actions such as "Turn question into poll"</p>
 
-  <section class="getting-started-content section-center">
-    <article class="guides-nav">
-      <a class="active-guide-nav" href="">How to create a poll in Slack</a>
-      <a href="">How to create an anonymous poll in Slack</a>
-      <a href="">How to create an anonymouspoll in Slack</a>
-      <a href="">How to create an anonymouspoll in Slack</a>
-    </article>
+    <h2>im:write</h2>
+    <p>Deliver notifications to individual users, for example in cases where a new decision was captured in a channel that the user is following</p>
 
-    <article class="how-to-create-a-poll" >
-      <h2>How to create a recurring poll in Slack</h2>
-      <p>Simple Poll makes it quick and easy to create recurring polls in Slack. There are a couple of ways to do so, so let's start with the easiest.</p>
+    <h2>chat:write</h2>
+    <p>Post messages such as polls and decisions</p>
 
-      <h3>Creating a new recurring poll</h3>
-      <p>To create a new recurring poll, access the Simple Poll shortcut as you would when creating a regular poll with Simple Poll. Click the Attachments and shortcuts button in Slack. It's the little plus symbol in the bottom left of the chat window.</p>
-      <img src="images/getting-started-img.jpeg" alt="">
-      <p>If Create poll with Simple Poll is not in the list already, you can search for it by typing "poll":</p>
-      <img src="images/pools.jpeg" alt="">
-      <p>After selecting the shortcut for Create poll with Simple Poll, a modal window that lets you create your poll will open. In the modal window, fill in the details of your poll and apply any Settings you want. Finally, to make the poll recurring, click the Schedule button.</p>
-    </article>
+    <h2>channels:join</h2>
+    <p>Automatically join public channels where you use Simple Poll, without you needing to manually /invite @simplepoll</p>
+
+    <h2>app_mentions:read</h2>
+    <p>Respond to direct mentions of the Simple Poll app, to display help text about how to use the app</p>
+
+    <h2>team:read</h2>
+    <p>Keep Simple Poll up to date when a workspace domain or name changes, which helps prevent some bugs. Also used to display the workspace icon in the Simple Poll dashboard</p>
+
+    <h2>users:read</h2>
+    <p>Enable Simple Poll to consistently display user display names across the app's surface areas</p>
+
+    <h2>channels:read, groups:read, mpim:read, im:read</h2>
+    <p>Requested so that Simple Poll knows whether it is present in a Slack channel, or whether a user still needs to invite the app. Also required to make Simple Poll work well consistently across different parts of Slack, to support shared channels, and for consistent display of channel names.</p>
+
   </section>
   <!-- MAIN -->
 
@@ -128,7 +126,6 @@
         <li><a href="scope-page.html">OAuth scopes </a></li>
         <li><a href="terms-of-service.html">Terms of Service</a></li>
         <li><a href="cookie-policy.html">Cookie</a></li>
-        <li><a href="privacy-policy.html">Privacy policy</a></li>
       </ul>
     </div>
 
@@ -142,6 +139,9 @@
       <p class="author">Created by: </span><a href="https://kenyerlingweb.com" target="_blank" rel="noopener">kenyerlingweb.com</a></p>
     </div>
   </footer>
+
+
+  <script src="./js/app.js"></script>
   <!-- FOOTER -->
 
   <script src="./js/app.js"></script>

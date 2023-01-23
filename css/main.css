@@ -334,6 +334,19 @@ input, textarea {
   font-weight: lighter;
 }
 
+.btn-grid {
+  display: grid;
+  grid-template-columns: -webkit-min-content -webkit-max-content;
+  grid-template-columns: min-content max-content;
+  -moz-column-gap: 0.6rem;
+       column-gap: 0.6rem;
+  align-items: center;
+}
+
+.btn-grid img {
+  width: 1.8rem;
+}
+
 .nav-logo {
   padding: 1rem;
 }
@@ -367,7 +380,9 @@ input, textarea {
 
   .top-nav ul {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, auto);
+    -moz-column-gap: 1.3rem;
+         column-gap: 1.3rem;
     align-self: center;
     align-items: center;
   }
@@ -588,8 +603,12 @@ input, textarea {
 }
 
 .pricing-light-box .box-content .btn {
-  background-color: var(--clr-background-buttons-medium);
+  background-color: var(--clr-background-buttons-light);
   color: var(--clr-primary-dark);
+}
+
+.pricing-light-box .btn:hover {
+  background-color: var(--clr-background-buttons-medium);
 }
 
 .pricing-dark-box {
@@ -859,6 +878,40 @@ a.active-guide-nav  {
   font-size: 2.6rem;
   color: var(--clr-primary-medium);
 }
+
+.scope-page-section, .cookie-policy-page, .privacy-policy-section, .terms-of-service-section {
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.scope-page-section h1, .cookie-policy-page h1, .privacy-policy-section h1, .terms-of-service-section h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--clr-primary-dark);
+}
+
+.scope-page-section h2, .cookie-policy-page h2, .privacy-policy-section h2, .terms-of-service-section h2 {
+  text-align: start;
+  margin-top: 2rem;
+  color: var(--clr-primary-dark);
+}
+
+.scope-page-section p {
+  font-size: 0.9rem;
+}
+
+.cookie-policy-page h3, .privacy-policy-section h3, .terms-of-service-section h3 {
+  text-align: start;
+  margin-top: 2rem;
+  color: var(--clr-primary-dark);
+}
+
+.privacy-policy-section small, .terms-of-service-section small {
+  color: rgba(98, 91, 91, 0.933);
+}
+
+
+
 
 @media screen and (min-width: 768px) {
 .security-boxes {
