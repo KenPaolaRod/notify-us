@@ -6,7 +6,7 @@
 
 * Replace "images/logo.ico" and "images/logo.png"
 
-* Search and replace "[***META-TITLE***]" with the name of the company
+* Search and replace "Notify Us" with the name of the company
 
 * In the nav, sidebar, and footer make sure to update the URL for all social media links
 

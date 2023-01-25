@@ -372,6 +372,16 @@ input, textarea {
   color: var(--clr-primary-black);
 }
 
+/* Fix the navbar to the top */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #fff;
+}
+
 /* show top nav for tablets and desktop */
 @media screen and (min-width: 1000px) {
   .top-nav button {
@@ -607,7 +617,7 @@ input, textarea {
   color: var(--clr-primary-dark);
 }
 
-.pricing-light-box .btn:hover {
+.pricing-light-box .box-content .btn:hover {
   background-color: var(--clr-background-buttons-medium);
 }
 
@@ -719,7 +729,7 @@ input, textarea {
 }
 
 .plans-grid-mobile .fa-circle-check {
-  color: var(--clr-background-medium);
+  color: var(--clr-primary-dark);
 }
 
 
@@ -748,8 +758,23 @@ input, textarea {
   font-size: 1.4rem;
 }
 
+.pricing-faq article p {
+  overflow: hidden;
+  height: auto;
+  max-height: 0px;
+  transition: height 1s ease-in-out, max-height 0.2s ease-in-out, padding 0.2s ;
+}
+
 .pricing-faq article.show-content p, .pricing-faq article.show-content .fa-minus {
   display: block;
+}
+
+.pricing-faq article.show-content p {
+  margin: 0;
+  padding: 0;
+  padding: 1rem 0;
+  max-height: 600px;
+  transition: max-height 1s ease-in-out, padding 1s ease-in-out;
 }
 
 .pricing-faq article p {
@@ -757,8 +782,9 @@ input, textarea {
   text-align: start;
 }
 
-.pricing-faq article p, .pricing-faq article.show-content .fa-plus {
+.pricing-faq article.show-content .fa-plus {
   display: none;
+  
 }
 
 button {
@@ -880,30 +906,37 @@ a.active-guide-nav  {
 }
 
 .scope-page-section, .cookie-policy-page, .privacy-policy-section, .terms-of-service-section {
-  padding: 2rem;
+  padding: 2rem 6rem;
   margin-top: 2rem;
 }
 
 .scope-page-section h1, .cookie-policy-page h1, .privacy-policy-section h1, .terms-of-service-section h1 {
-  text-align: center;
+  text-align: start;
   margin-bottom: 1rem;
   color: var(--clr-primary-dark);
+  font-family: var(--ff-primary);
 }
 
 .scope-page-section h2, .cookie-policy-page h2, .privacy-policy-section h2, .terms-of-service-section h2 {
   text-align: start;
   margin-top: 2rem;
   color: var(--clr-primary-dark);
+  font-family: var(--ff-primary);
+  font-size: 1.3rem;
+  font-weight: bold;
+
 }
 
-.scope-page-section p {
-  font-size: 0.9rem;
+.scope-page-section p, .cookie-policy-page p, .privacy-policy-section p, .terms-of-service-section p  {
+  font-size: 1rem;
+  font-family: var(--ff-secondary);
 }
 
 .cookie-policy-page h3, .privacy-policy-section h3, .terms-of-service-section h3 {
   text-align: start;
   margin-top: 2rem;
   color: var(--clr-primary-dark);
+  font-size: 1.1rem;
 }
 
 .privacy-policy-section small, .terms-of-service-section small {
@@ -1030,8 +1063,8 @@ a.active-guide-nav  {
 .getting-started-content {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+       -moz-column-gap: 6rem;
+            column-gap: 6rem;
 }
 
 .guides-nav {
