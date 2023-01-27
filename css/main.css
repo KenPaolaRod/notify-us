@@ -591,7 +591,7 @@ input, textarea {
   font-family: var(--ff-secondary);
 }
 
-.frequency-switch span.active {
+.frequency-switch span.plans-toggle-active {
   background-color: var(--clr-background-buttons-dark);
   color: var(--clr-primary-light);
   border-radius: var(--radius-btn);
@@ -663,6 +663,10 @@ input, textarea {
   font-family: var(--ff-secondary);
   font-weight: bold;
   font-size: 4rem;
+}
+
+.hide-price {
+  display: none;
 }
 
  .box-price {
@@ -981,7 +985,7 @@ a.active-guide-nav  {
     padding: 6rem;
   }
 
-  .pricing-boxes {
+  /* .pricing-boxes {
     grid-template-columns: repeat(4, 1fr);
     -moz-column-gap: 2rem;
          column-gap: 2rem;
@@ -990,6 +994,14 @@ a.active-guide-nav  {
 
   .frequency-switch {
     grid-column: 1 / -1;
+  } */
+
+  .pricing-boxes-colums {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap:  2rem;
+         column-gap:  2rem;
+    align-items: center;
   }
 
   /* compared-plans for desk-top  */

@@ -5,7 +5,8 @@ const sidebar = document.querySelector("#sidebar");
 const dateSpan = document.querySelector("#date");
 let faq = document.querySelectorAll(".faq-box");
 const faqBtn = document.querySelectorAll(".faq-box button")
-const copyEl = document.querySelector(".copy")
+const plansToggle = document.querySelectorAll(".frequency-switch span");
+const pricesToggle = document.querySelectorAll(".box-price span.big-number");
 
 
 // show sidebar
@@ -56,11 +57,18 @@ function copyText(element) {
     element.innerHTML = `Copy <i class="fa-solid fa-copy"></i>`;
   }, 5000);
 
-  console.log(element);
-  console.log(element.previousElementSibling);
-  console.log(element.previousElementSibling.previousElementSibling);
 }
 
 
+// plans price switch 
 
+
+plansToggle.forEach(e => e.addEventListener("click", () => {
+
+  plansToggle.forEach(el => el.classList.toggle("plans-toggle-active"))
+
+  pricesToggle.forEach(e => {
+    e.classList.toggle("hide-price")
+  })
+}))
 
