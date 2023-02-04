@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notify Us for Slack || Security Scopes</title>
+  <script src="https://kit.fontawesome.com/d5967e8e60.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" /><link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="top-nav" class="top-nav">
+    <div class="nav-logo">
+      <a href="/">
+        <img src="./images/header-logo.png">
+      </a>
+    </div>
+    <ul>
+      <li><a href="/">home</a></li>
+      <li><a href="getting-started.html">Getting started</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+<li>
+        <a href="auth/add_to_slack">
+          <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+        </a>
+      </li>
+    </ul>
+    <button id="open-sidenav-btn" class="icon-dark nav-action-btn" aria-label="Open Nav">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <button id="sidenav-close-btn" class="icon-light nav-action-btn" aria-label="Close Nav">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul class="sidebar-links">
+      <li><a href="/">home</a></li>
+      <li><a href="getting-started.html">Getting started</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+<li>
+        <a href="auth/add_to_slack">
+          <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <!-- SIDEBAR -->
+
+  <!-- MAIN -->
+  <section class="scope-page-section">
+    <h1>Permission scopes</h1>
+    <p>Permission (OAuth) scopes are the permissions that Simple Poll requires to function properly in Slack. Slack publishes guidance about understanding these permissions scopes in their help center, which you may find helpful to review: https://slack.com/intl/en-de/help/articles/115003461503-Understand-app-permissions</p>
+
+    <h2>commands</h2>
+    <p>Add the /poll and /decision commands to your workspace as well as app actions such as "Turn question into poll"</p>
+
+    <h2>im:write</h2>
+    <p>Deliver notifications to individual users, for example in cases where a new decision was captured in a channel that the user is following</p>
+
+    <h2>chat:write</h2>
+    <p>Post messages such as polls and decisions</p>
+
+    <h2>channels:join</h2>
+    <p>Automatically join public channels where you use Simple Poll, without you needing to manually /invite @simplepoll</p>
+
+    <h2>app_mentions:read</h2>
+    <p>Respond to direct mentions of the Simple Poll app, to display help text about how to use the app</p>
+
+    <h2>team:read</h2>
+    <p>Keep Simple Poll up to date when a workspace domain or name changes, which helps prevent some bugs. Also used to display the workspace icon in the Simple Poll dashboard</p>
+
+    <h2>users:read</h2>
+    <p>Enable Simple Poll to consistently display user display names across the app's surface areas</p>
+
+    <h2>channels:read, groups:read, mpim:read, im:read</h2>
+    <p>Requested so that Simple Poll knows whether it is present in a Slack channel, or whether a user still needs to invite the app. Also required to make Simple Poll work well consistently across different parts of Slack, to support shared channels, and for consistent display of channel names.</p>
+
+  </section>
+  <!-- MAIN -->
+
+  <!-- FOOTER -->
+  <section class="footer-wave">
+    <img src="images/waves.svg" alt="">
+
+  </section>
+  <footer>
+    <div class="footer-logo">
+      <span>
+        <img src="images/footer-logo.png" alt="Logo">
+      </span>
+    </div>
+
+    <div class="footer-links">
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="faq.html">Support</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="scopes.html">OAuth scopes </a></li>
+        <li><a href="tos.html">Terms of Service</a></li>
+        <li><a href="cookie-policy.html">Cookie</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+            <a href="mailto:feedback@notifyus.app">feedback@notifyus.app</a>
+      <a href="mailto:support@notifyus.app">support@notifyus.app</a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy;<span id="date"></span> Notify Us, All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="./js/app.js"></script>
+  <!-- FOOTER -->
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

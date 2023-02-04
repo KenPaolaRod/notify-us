@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notify Us || Thank You</title>
-  <link href="./fontawesome/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap" rel="stylesheet">  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+  <title>Notify Us for Slack || Cookie Policy</title>
+  <script src="https://kit.fontawesome.com/d5967e8e60.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" /><link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- NAVBAR -->
   <nav id="top-nav" class="top-nav">
     <div class="nav-logo">
       <a href="/">
-        <img src="./images/logo.png">
+        <img src="./images/header-logo.png">
       </a>
     </div>
     <ul>
@@ -24,11 +27,13 @@
       <li><a href="getting-started.html">Getting started</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="faq.html">FAQ</a></li>
-      <li><a href="#">Dashboard</a></li>
-<li><a href="#" class="btn btn-dark btn-grid">
-        <img src="images/slack-logo.png" alt="">
-        <span>Add To Slack</span>
-      </a></li>    </ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li>
+        <a href="auth/add_to_slack">
+          <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+        </a>
+      </li>
+    </ul>
     <button id="open-sidenav-btn" class="icon-dark nav-action-btn" aria-label="Open Nav">
       <i class="fas fa-bars"></i>
     </button>
@@ -45,25 +50,10 @@
       <li><a href="getting-started.html">Getting started</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="faq.html">FAQ</a></li>
-      <li><a href="#">Dashboard</a></li>
-<li><a href="#" class="btn btn-dark btn-grid">
-        <img src="images/slack-logo.png" alt="">
-        <span>Add To Slack</span>
-      </a></li>    </ul>
-    <ul class="social-icons">
+      <li><a href="dashboard.html">Dashboard</a></li>
       <li>
-        <a href="https://www.instagram.com/" class="social-icon" target="_blank" rel="noopener">
-          <i class="icon-dark fab fa-instagram"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/company/" class="social-icon" target="_blank" rel="noopener">
-          <i class="icon-dark fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://api.whatsapp.com/send?phone=+555555555&text=Hi, I would like to know more about your services" class="social-icon" target="_blank" rel="noopener">
-          <i class="icon-dark fab fa-whatsapp"></i>
+        <a href="auth/add_to_slack">
+          <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
         </a>
       </li>
     </ul>
@@ -96,37 +86,36 @@
   <footer>
     <div class="footer-logo">
       <span>
-        <img src="images/logo.png" alt="Logo">
+        <img src="images/footer-logo.png" alt="Logo">
       </span>
     </div>
 
     <div class="footer-links">
       <ul>
-        <li><a href="/">Dashboard</a></li>
-        <li><a href="#">Getting Started</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="contact-us.html">Blog</a></li>
         <li><a href="contact-us.html">Support</a></li>
-        <li><a href="security.html">Security</a></li>
+        <li><a href="faq.html">Support</a></li>
       </ul>
 
       <ul>
-        <li><a href="privacy-policy.html">Policy and privacy</a></li>
-        <li><a href="scope-page.html">OAuth scopes </a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="scopes.html">OAuth scopes </a></li>
         <li><a href="contact-us.html">Policy GDPR </a></li>
-        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="tos.html">Terms of Service</a></li>
         <li><a href="cookie-policy.html">Cookie</a></li>
       </ul>
     </div>
 
-    <div class="footer-social">
-      <a href="mailto:feedback@simplepoll.rocks">feedback@simplepoll.rocks</a>
-      <a href="mailto:feedback@simplepoll.rocks">feedback@simplepoll.rocks</a>
+    <div class="footer-contact">
+            <a href="mailto:feedback@notifyus.app">feedback@notifyus.app</a>
+      <a href="mailto:support@notifyus.app">support@notifyus.app</a>
     </div>
 
     <div class="copyright">
       <p>&copy;<span id="date"></span> Notify Us, All Rights Reserved.</p>
-      <p class="author">Created by: </span><a href="https://kenyerlingweb.com" target="_blank" rel="noopener">kenyerlingweb.com</a></p>
     </div>
   </footer>
   <!-- FOOTER -->

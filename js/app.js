@@ -43,30 +43,39 @@ faq.forEach( e => {
 
 
 // Copy text from home page 
-
 function copyText(element) {
-  var text = element.previousElementSibling.previousElementSibling.innerHTML;
-  var temp = document.createElement("textarea");
-  temp.value = text;
-  document.body.appendChild(temp);
-  temp.select();
-  document.execCommand("copy");
-  document.body.removeChild(temp);
-  element.innerHTML = `Copied <i class="fa-solid fa-copy"></i>`     ;
-  setTimeout(function() {
-    element.innerHTML = `Copy <i class="fa-solid fa-copy"></i>`;
-  }, 5000);
+  var text_to_copy = element.parentElement.querySelector("p").innerHTML;
 
+  // Need to use the old way
+  if (!navigator.clipboard){
+    fallbackCopyTextToClipboard(text);
+  } else{
+      navigator.clipboard.writeText(text_to_copy);
+  } 
 }
 
+function fallbackCopyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  
+  // Avoid scrolling to bottom
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.position = "fixed";
 
-// plans price switch 
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
 
+  try {
+    document.execCommand('copy');
+  } catch (err) {}
+
+  document.body.removeChild(textArea);
+}
 
 plansToggle.forEach(e => e.addEventListener("click", () => {
-
   plansToggle.forEach(el => el.classList.toggle("plans-toggle-active"))
-
   pricesToggle.forEach(e => {
     e.classList.toggle("hide-price")
   })

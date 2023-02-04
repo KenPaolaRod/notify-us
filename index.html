@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notify Us || Home</title>
-  <link href="./fontawesome/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap" rel="stylesheet">  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+  <title>Notify Us for Slack</title>
+  <script src="https://kit.fontawesome.com/d5967e8e60.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" /><link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav id="top-nav" class="top-nav">
     <div class="nav-logo">
       <a href="/">
-        <img src="./images/logo.png">
+        <img src="./images/header-logo.png">
       </a>
     </div>
     <ul>
@@ -23,11 +26,12 @@
       <li><a href="getting-started.html">Getting started</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="faq.html">FAQ</a></li>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#" class="btn btn-dark btn-grid">
-        <img src="images/slack-logo.png" alt="">
-        <span>Add To Slack</span>
-      </a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li>
+        <a href="auth/add_to_slack">
+          <img alt="Add to Slack" class="add-slack" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+        </a>
+      </li>
     </ul>
     <button id="open-sidenav-btn" class="icon-dark nav-action-btn" aria-label="Open Nav">
       <i class="fas fa-bars"></i>
@@ -43,168 +47,147 @@
       <li><a href="getting-started.html">Getting started</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="faq.html">FAQ</a></li>
-      <li><a href="#">Dashboard</a></li>
-<li><a href="#" class="btn btn-dark btn-grid">
-        <img src="images/slack-logo.png" alt="">
-        <span>Add To Slack</span>
-      </a></li>    </ul>
-    <ul class="social-icons">
+      <li><a href="dashboard.html">Dashboard</a></li>
       <li>
-        <a href="https://www.instagram.com/" class="social-icon" target="_blank" rel="noopener">
-          <i class="icon-dark fab fa-instagram"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/company/" class="social-icon" target="_blank" rel="noopener">
-          <i class="icon-dark fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://api.whatsapp.com/send?phone=+555555555&text=Hi, I would like to know more about your services" class="social-icon" target="_blank" rel="noopener">
-          <i class="icon-dark fab fa-whatsapp"></i>
+        <a href="auth/add_to_slack">
+          <img alt="Add to Slack" class="add-slack" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
         </a>
       </li>
     </ul>
   </aside>
 
-  <section class="hero-section">
-    <article class="hero">
+  <section class="home-hero-section">
+    <article class="home-hero">
         <div>
-          <h1>Simple, native polls right within Slack</h1>
-          <p>Get your colleagues' thoughts in minutes, not in the next meeting. All right in Slack.</p>
-          <a href="" class="btn btn-dark">Add to Slack</a>
+          <h1>Team collaboration app that simplifies communication</h1>
+          <p>Reach your team across multiple communication channels. All right from Slack.</p>
+          <a href="auth/add_to_slack">
+            <img alt="Add to Slack" class="add-slack" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+          </a>
         </div>
 
       <img src="images/6089dd878613a5ef0138f6ef_Hero.svg" alt="">
-  </article>
+    </article>
 
     <div class="wave">
       <img src="images/wavesNegative.svg" alt="">
     </div>
   </section>
-
-  <!--
-    MORE SECTIONS DOWN HERE
-  -->
-
+  
   <section>
-    <article class="section-content-right">
-      <div class="content-img">
-        <img src="images/6089dd878613a5ef0138f6ef_Hero.svg" alt="">
+    <article class="home-content-right">
+      <div class="home-content">
+        <h2>Create your topic</h2>
+        <p>A topic is a subject or theme that a user can subscribe to in order to receive updates or notifications.</p>
+        <div class="home-wave">
+          <p></p>
+          <img src="images/wavesNegative.svg" alt="wave img">
+        </div>
+
+        <br/><br/>
+
+        <h2>Share your topic</h2>
+        <p>It's important to let others know about your topic. Send a Slack message encouraging them to subscribe.</p>
+        <div class="home-wave">
+          <p></p>
+          <img src="images/wavesNegative.svg" alt="wave img">
+        </div>
       </div>
 
-      <div>
-        <h2>Native polls</h2>
-        <p>All polls are native in Slack, so your colleagues can cast their votes instantly. Try creating a poll by copy-pasting the /poll command below</p>
-        <span >
-          <p>hola</p>
-          <img src="images/wavesNegative.svg" alt="wave img">
-          <button onclick="copyText(this)">
-            Copy
-            <i class="fa-solid fa-copy"></i>
-          </button>
-        </span>
+      <div class="home-video-container">
+        <video width="100%" class="" autoplay="" loop="" muted="" playsinline="">
+          <source src="/images/app/topics/tutorial_create_share.mov" type="video/mp4">
+        </video>  
       </div>
     </article>
   </section>
 
+  <hr class="home-divider"/>
+
   <section>
-    <article class="section-content-right">
-      <div>
-        <h2>Native polls</h2>
-        <p>All polls are native in Slack, so your colleagues can cast their votes instantly. Try creating a poll by copy-pasting the /poll command below</p>
-        <span >
-          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt ea dolores, iusto sequi rerum?</p>
+    <article class="home-content-right">
+      <div class="home-content">
+        <h2>Create subscriptions</h2>
+        <p>Subscribers can receive notifications sent for a topic. These notifications can be received through Slack, email, or external systems by using webhooks.</p>
+        <div class="home-wave">
+          <p></p>
           <img src="images/wavesNegative.svg" alt="wave img">
-          <button onclick="copyText(this)">
-            Copy
-            <i class="fa-solid fa-copy"></i>
-          </button>
-        </span>
+        </div>
+
+        <br/><br/>
+
+        <h2>Send a test</h2>
+        <p>It's important to make sure that the subscription has been configured correctly.</p>
+        <div class="home-wave">
+          <p></p>
+          <img src="images/wavesNegative.svg" alt="wave img">
+        </div>
       </div>
-      <div class="content-img">
-        <img src="images/6089dd878613a5ef0138f6ef_Hero.svg" alt="">
+
+      <div class="home-video-container">
+        <video width="100%" class="" autoplay="" loop="" muted="" playsinline="">
+          <source src="/images/app/subscriptions/create.mov" type="video/mp4">
+        </video>  
       </div>
     </article>
   </section>
 
+  <hr class="home-divider"/>
+
   <section>
-    <article class="section-content-right">
-      <div class="content-img">
-        <img src="images/6089dd878613a5ef0138f6ef_Hero.svg" alt="">
+    <article class="home-content-right">
+      <div class="home-content">
+        <h2>Send notification</h2>
+        <p>Topic owners will publish messages to their topics. Subscribers will receive the message near real-time if it matches their selected notification types.</p>
+        <div class="home-wave">
+          <p></p>
+          <img src="images/wavesNegative.svg" alt="wave img">
+        </div>
       </div>
 
-      <div>
-        <h2>Native polls</h2>
-        <p >All polls are native in Slack, so your colleagues can cast their votes instantly. Try creating a poll by copy-pasting the /poll command below</p>
-        <span >
-          <p>/poll "Which days work for you for the team dinner?" "Monday" "Tuesday" "Wednesday" "Thursday" "Friday"</p>
-          <img src="images/wavesNegative.svg" alt="wave img">
-          <button onclick="copyText(this)">
-            Copy
-            <i class="fa-solid fa-copy"></i>
-          </button>
-        </span>
+      <div class="home-video-container">
+        <video width="100%" class="" autoplay="" loop="" muted="" playsinline="">
+          <source src="/images/app/notifications/send_notification.mov" type="video/mp4">
+        </video>  
       </div>
     </article>
   </section>
+
   <section class="footer-wave">
     <img src="images/waves.svg" alt="">
-
   </section>
+
   <footer>
     <div class="footer-logo">
       <span>
-        <img src="images/logo.png" alt="Logo">
+        <img src="images/footer-logo.png" alt="Logo">
       </span>
     </div>
 
     <div class="footer-links">
       <ul>
-        <li><a href="/">Dashboard</a></li>
-        <li><a href="#">Getting Started</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
         <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="security.html">Security</a></li>
+        <li><a href="faq.html">Support</a></li>
       </ul>
 
       <ul>
-        <li><a href="privacy-policy.html">Policy and privacy</a></li>
-        <li><a href="scope-page.html">OAuth scopes </a></li>
-        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="scopes.html">OAuth scopes </a></li>
+        <li><a href="tos.html">Terms of Service</a></li>
         <li><a href="cookie-policy.html">Cookie</a></li>
         <li><a href="privacy-policy.html">Privacy policy</a></li>
       </ul>
     </div>
 
-    <!-- <div class="footer-social">
-      <h2>Get in touch</h2>
-      <ul class="footer-social-icons">
-        <li>
-          <a href="https://www.instagram.com/" class="social-icon" target="_blank" rel="noopener">
-            <i class="icon-light fab fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/" class="social-icon" target="_blank" rel="noopener">
-            <i class="icon-light fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://api.whatsapp.com/send?phone=+55555555&text=Hi, I would like to know more about your services" class="social-icon" target="_blank" rel="noopener">
-            <i class="icon-light fab fa-whatsapp"></i>
-          </a>
-        </li>
-      </ul>
-    </div> -->
-
-    <div class="footer-social">
-      <a href="mailto:feedback@simplepoll.rocks">feedback@simplepoll.rocks</a>
-      <a href="mailto:feedback@simplepoll.rocks">feedback@simplepoll.rocks</a>
+    <div class="footer-contact">
+      <a href="mailto:feedback@notifyus.app">feedback@notifyus.app</a>
+      <a href="mailto:support@notifyus.app">support@notifyus.app</a>
     </div>
 
     <div class="copyright">
       <p>&copy;<span id="date"></span> Notify Us, All Rights Reserved.</p>
-      <p class="author">Created by: </span><a href="https://kenyerlingweb.com" target="_blank" rel="noopener">kenyerlingweb.com</a></p>
     </div>
   </footer>
 
