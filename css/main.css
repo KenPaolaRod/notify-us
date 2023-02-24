@@ -564,7 +564,7 @@ textarea {
 }
 
 .home-hero .add-slack {
-  margin: 0 auto;
+  margin: 0;
 }
 /******************************************/
 
@@ -760,11 +760,11 @@ textarea {
 .home-hero p {
   margin-top: 1.3rem;
   text-align: center;
+  font-family: var(--ff-secondary);
+  font-weight: 200;
+  font-size: var(--ff-size-small);
 }
 
-.home-video-container {
-  box-shadow: 0 16px 17px 0 rgb(0 0 0 / 13%);
-}
 
 /* wave  */
 
@@ -793,50 +793,67 @@ textarea {
   grid-column: 1 / -1;
 }
 
-.home-divider {
-  margin: 0 0 5rem 0;
+.home-background-dark {
+  background-color: #7800000c;
+  border-radius: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.home-content-right {
+
+.home-content-right, .home-content-left {
   display: grid;
-  row-gap: 1.5rem;
+  row-gap: 2.5rem;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 7rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.home-content {
+  align-items: center;
 }
 
 .home-content h2 {
+  color: var(--clr-primary-dark);
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 0.8rem;
+  text-align: start;
+}
+
+.home-content .fa-circle-check {
+  color: var(--clr-primary-medium);
+}
+
+
+.home-content-left .fa-circle-check {
+  color: var(--clr-primary-dark);
+}
+
+.home-content li {
+  margin-top: 0.8rem;
+  font-family: var(--ff-secondary);
+  font-size: var(--ff-size-small);
+  font-weight: 200;
 }
 
 .home-content p {
   font-size: var(--ff-size-small);
+  font-weight: 200;
+  font-family: var(--ff-secondary);
+}
+
+.home-content img {
+  width: 400px;
 }
 
 .home-wave {
   display: none;
 }
 
-.home-wave p {
-  background-color: var(--clr-background-dark);
-  color: var(--clr-background-buttons-light);
-  margin: 0;
-  padding: 1.5rem;
-  border-radius: 20px 20px 0 0;
-  font-size: var(--ff-size-small);
-}
-
-.home-wave img {
-  background-color: var(--clr-background-dark);
-  height: 4rem;
-}
 
 @media screen and (min-width: 992px) {
-  .home-wave {
-    display: block;
-  }
 
   .home-hero {
     grid-template-columns: 1fr 1fr;
@@ -858,6 +875,17 @@ textarea {
     grid-template-columns: 2fr 1fr;
     -moz-column-gap: 10rem;
     column-gap: 10rem;
+    align-items: center;
+  }
+
+  .home-content-left {
+    grid-template-columns: 1fr 2fr;
+    -moz-column-gap: 10rem;
+    column-gap: 8rem;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+
   }
 }
 
@@ -1274,7 +1302,7 @@ a.active-guide-nav {
 
   .plans-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     -moz-column-gap: 3rem;
     column-gap: 3rem;
     row-gap: 1rem;
